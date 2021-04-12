@@ -25,6 +25,8 @@ class AddViewController: UIViewController {
         let value2 = Int(textField2.text!) ?? 0
 
         label.text = String(value1 + value2)
+        textField1.endEditing(true)
+        textField2.endEditing(true)
     }
 }
 
